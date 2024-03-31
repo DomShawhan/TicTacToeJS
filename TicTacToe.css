@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    color: #ffda14;
+}
+
+h1 {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    font-size: 78px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 35px;
+    color: #da14ff;
+}
+
+button {
+    font-size: 30px;
+    border: 2px solid #9703b1;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: #da14ff;
+    color: white;
+    cursor: pointer;
+    transition: all .25s;
+}
+
+button:hover {
+    background-color: #9703b1;
+    border-color: #da14ff;
+}
+
+button:active {
+    transform: scale(95%);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player1 {
+    color: #39ff14;
+}
+
+.player2 {
+    color: #ff14af;
+}
+
+.block {
+    font-family: 'Brush Script MT', cursive;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #da14ff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+    font-size: 80px;
+}
+
+.block.open:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+
+.input {
+    font-size: 30px;
+    border: 2px solid #9703b1;
+    padding: 15px;
+    color: white;
+    border-radius: 25px;
+    background-color: #da14ff;
+    width: 25px;
+}
+
+#tl {
+    border-left: 0;
+    border-top: 0;
+}
+
+#tm {
+    border-top: 0;
+}
+
+#tr {
+    border-right: 0;
+    border-top: 0;
+}
+
+#ml {
+    border-left: 0;
+}
+
+#mr {
+    border-right: 0;
+}
+
+#bl {
+    border-left: 0;
+    border-bottom: 0;
+}
+
+#bm {
+    border-bottom: 0;
+}
+
+#br {
+    border-right: 0;
+    border-bottom: 0;
+}
+
+#winner {
+    display: none;
+}
+
+.background {
+    color: #9703b1;
+    font-size: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes winner {
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}

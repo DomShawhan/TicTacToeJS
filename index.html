@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TicTacToe.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+
+    <h1>Tic Tac Toe</h1>
+
+    <h2 id="current">Current player: <span id="current-player">X</span></h2>
+
+    <div class="container">
+        <div class="row" id="top">
+            <div class="block open" id="tl"></div>
+            <div class="block open" id="tm"></div>
+            <div class="block open" id="tr"></div>
+        </div>
+        <div class="row" id="middle">
+            <div class="block open" id="ml"></div>
+            <div class="block open" id="mm"></div>
+            <div class="block open" id="mr"></div>
+        </div>
+        <div class="row" id="bottom">
+            <div class="block open" id="bl"></div>
+            <div class="block open" id="bm"></div>
+            <div class="block open" id="br"></div>
+        </div>
+    </div>
+    
+    <div class="background" id="winner">
+        <div class="popup" id="winner-text">
+            Winner: <span id="winner-player">X</span><br>
+            <button class="play-again">Play Again</button>
+        </div>
+        <div class="popup" id="no-winner-text">
+            There is no winner! <br>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <div class="background" id="setup">
+        <div class="popup">
+            <form>
+                <div class="group">
+                    <label for="player1">Player 1</label>
+                    <input type="text" class="input" name="player1" id="player1" value="X">
+                </div>
+                <div class="group">
+                    <label for="player2">Player 2</label>
+                    <input type="text" class="input" name="player2" id="player2" value="O">
+                </div>
+                <button>Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="TicTacToe.js"></script>
+</body>
+</html>
